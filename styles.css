@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:monospace;
+}
+
+body {
+    background-color: rgb(223, 235, 235);
+    height: 100vh;
+}
+
+.container{
+    width: 30%;
+    background-color: white;
+    margin: 0 auto;
+    height: 70%;
+    padding: 1% 0;
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+    margin-top: 3%;
+}
+
+.container section{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.container-time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-time-current{
+    display: flex;
+    align-items: center;
+}
+
+.container-time-current .day{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container-time-current .month{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-time-current .month strong{
+    font-weight: 100;
+}
+
+.container-day{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container-task{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4%;
+}
+
+.container-new-task input{
+    width: 220px;
+    height: 35px;
+    padding-left: 12px;
+    border-radius: 5px;
+    background-color: rgb(223, 235, 235);
+    border: none;
+}
+
+.container-new-task button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 0px;
+    font-size: 25px;
+    font-weight: 900;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+.container-task-order{
+    width: 24%;
+    height: 35px;
+    border: none;
+    background-color: rgb(235, 2, 2);
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.container-list {
+    background-color: rgb(223, 235, 235);
+    height: 67%;
+    border-radius: 12px;
+    padding: 0px 5px 5px 5px;
+    overflow-y: auto;
+    margin-top: 12px;
+}
+
+.container-list li{
+    width: 97.5%;
+    color: white;
+    height: 1fr;
+    font-size: 20px;
+    padding: 20px 0px 20px 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container-list .active{
+    background-color: tomato ;
+}
+
+.container-list .inactive{
+    background-color: rgb(69, 219, 43);
+    text-decoration: line-through;
+}
